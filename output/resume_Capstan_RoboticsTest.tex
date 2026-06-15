@@ -1,0 +1,99 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{8pt}
+
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.75in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\vspace{1pt}\hrule]
+\titlespacing*{\section}{0pt}{1pt}{2pt}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \small #2 \\
+      \small #3 & \small #4 \\
+    \end{tabular*}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small #1 & \small #2 \\
+    \end{tabular*}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label=\textbullet]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=-]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Mihir Bhagatwala} \\
+  {\small (858) 280-9325 $\vert$ \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $\vert$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio}} \\
+  {\small \textbf{Santa Cruz, CA (Local Candidate)}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{University of California, Santa Cruz}{Santa Cruz, CA}{B.S. in Computer Engineering (Robotics \& Controls Focus)}{Expected Jun. 2027}
+  \resumeItemListStart
+    \resumeItem{\textbf{GPA:} 3.52}
+    \resumeItem{\textbf{Coursework:} Feedback Control Systems, Robot Kinematics, Mechatronics, Circuit Theory, Embedded Systems, Digital Signal Processing}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Slugbotics, University of California Santa Cruz}{Jan. 2025 -- Jun. 2025}{Robotics \& Controls Engineer}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Tuned closed-loop feedback parameters (PID) on real mechatronic hardware, quantifying improvements in dynamic stability and mechanical actuation through clean before-and-after data analysis.}
+    \resumeItem{Applied foundational robot kinematics and frequency response concepts to develop robust C++ embedded control software for advanced underwater robotics.}
+    \resumeItem{Collaborated effectively in a fast-paced, hardware-heavy environment, actively participating in team design reviews and leveraging Git for code review workflows and unit testing.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Santa Cruz Institute for Particle Physics}{Jan. 2025 -- Present}{Validation \& Test Automation Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Designed and executed benchtop characterization studies in a lab setting, carefully evaluating high-fidelity analog systems for performance metrics like tracking error and signal hysteresis.}
+    \resumeItem{Built robust Python automation scripts utilizing NumPy, SciPy, Matplotlib, and pandas alongside small test harnesses for repeatable, hands-off data collection across sensitive instrumentation.}
+    \resumeItem{Developed reusable analysis tooling for the engineering team, including data ingestion pipelines, log parsing scripts, and plotting utilities to streamline continuous verification testing.}
+    \resumeItem{Documented experimental protocols thoroughly and presented findings logically, maintaining a high standard of technical writing analogous to strict medical device standards.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Formula Slug, University of California Santa Cruz}{Oct. 2025 -- Present}{Hardware Test Engineer}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Executed precise design verification testing on physical hardware components (J1772 signaling boards), running experiments carefully and writing up comprehensive technical results.}
+    \resumeItem{Contributed to the team's data infrastructure by processing complex telemetry data in MATLAB to accurately evaluate system identification and physical hardware friction metrics.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \item\small{\textbf{Software \& Data Analysis:} Python (NumPy, SciPy, Matplotlib, pandas), C++, MATLAB, Git, Log Parsing, Plotting Utilities}
+  \item\small{\textbf{Robotics \& Controls:} Feedback Control (PID), Robot Kinematics, System Identification, Frequency Response, Benchtop Characterization}
+  \item\small{\textbf{Testing \& Hardware:} Test Harnesses, Automation Scripts, Design Verification Testing, Real Hardware Tuning, Data Collection}
+  \item\small{\textbf{Key Competencies:} Fast-Paced Startup Environment, Technical Documentation, Design Reviews, Medical Device Standards Awareness}
+\resumeSubHeadingListEnd
+
+\end{document}

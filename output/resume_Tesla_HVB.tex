@@ -1,0 +1,95 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{8pt}
+
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.75in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\vspace{1pt}\hrule]
+\titlespacing*{\section}{0pt}{1pt}{2pt}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      #3 & #4 \\
+    \end{tabular*}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label=\textbullet]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=-]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Mihir Bhagatwala} \\
+  {(858) 280-9325 $\vert$ \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $\vert$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio}} \\
+  {\textbf{Palo Alto, CA (Open to Relocation)}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{University of California, Santa Cruz}{Santa Cruz, CA}{B.S. in Computer Engineering (Battery Systems \& Power Electronics Focus)}{Expected Jun. 2027}
+  \resumeItemListStart
+    \resumeItem{\textbf{GPA:} 3.52}
+    \resumeItem{\textbf{Coursework:} Electrochemistry, Battery Modeling, Power Electronics, Circuit Theory, C/Embedded Systems}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Formula Slug, University of California Santa Cruz}{Oct. 2025 -- Present}{HVB Product Support Engineer}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Designed a custom PCB to regulate High Voltage Battery (HVB) charging and HV DC power systems, reading complex electrical schematics and system block diagrams to ensure battery compatibility.}
+    \resumeItem{Validated BMS firmware through rigorous bench testing, partnering in cross-functional collaboration with battery design and quality teams via collaborative development workflows (git).}
+    \resumeItem{Performed root cause investigation on bench and field failures at the cell, module, and pack level, utilizing CAN logs and telemetry data to guide pack replacement and serviceability strategies.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Santa Cruz Institute for Particle Physics}{Jan. 2025 -- Present}{Diagnostics \& Telemetry Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Wrote robust C/embedded systems firmware (C++ Arduino) and rigorously validated custom boards, building autodiagnostic networks that automatically classify hardware failure modes.}
+    \resumeItem{Conducted large data analysis by writing Python scripts to query databases, process telemetry, and visualize trends using matplotlib to surface early warning signals.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Slugbotics, University of California Santa Cruz}{Jan. 2025 -- Jun. 2025}{Embedded Systems \& UI Engineer}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Designed a Python computer vision system that processes large streams of sensor data and automatically classifies it, utilizing modern LLM tools to analyze degradation patterns and failure trends.}
+    \resumeItem{Built Service User Interface (UI) panels that surface real-time data and diagnostics to users, designing onboard diagnostic routines to actively recover from faults and restore functionality.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \item{\textbf{HVB \& Power Systems:} High Voltage Battery (HVB) Systems, HV DC Power Systems, Battery Management Systems (BMS), Battery Modeling, Electrochemistry, Cell/Module/Pack Diagnostics, NMC/LFP/2170/4680 Chemistries}
+  \item{\textbf{Software \& Embedded:} Python, C/Embedded Systems, Version Control (git), LLM Tools, Autodiagnostic Networks, Service User Interface (UI) Panels, Collaborative Development Workflows}
+  \item{\textbf{Data Analysis \& Diagnostics:} Fleet Data Analysis, Telemetry Data, CAN Logs / CAN Bus Protocols, Root Cause Investigation, matplotlib, System Block Diagrams, Electrical Schematics}
+\resumeSubHeadingListEnd
+
+\end{document}

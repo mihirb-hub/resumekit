@@ -1,0 +1,105 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{8pt}
+
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.75in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\vspace{1pt}\hrule]
+\titlespacing*{\section}{0pt}{1pt}{2pt}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \small #2 \\
+      \small #3 & \small #4 \\
+    \end{tabular*}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \small #2 \\
+    \end{tabular*}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label=\textbullet]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=-]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Mihir Bhagatwala} \\
+  {\small (858) 280-9325 $\vert$ \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $\vert$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio}} \\
+  {\small \textbf{Camarillo, CA (Available for Relocation) $\vert$ U.S. Citizen (Eligible for DoD Security Clearances)}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{University of California, Santa Cruz}{Santa Cruz, CA}{B.S. in Computer Engineering (Digital Logic \& Hardware Focus)}{Expected Jun. 2027}
+  \resumeItemListStart
+    \resumeItem{\textbf{GPA:} 3.52}
+    \resumeItem{\textbf{Coursework:} Logic Design, Circuit Theory, Embedded Systems, Digital Signal Processing, Electromagnetism}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Santa Cruz Institute for Particle Physics}{Jan. 2025 -- Present}{Mixed-Signal \& Verification Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Supported the integration of digital logic with analog/mixed-signal blocks to build optical instrumentation and high-fidelity receiver circuits for LANL prototypes.}
+    \resumeItem{Debugged hardware interfaces and analyzed performance to verify the functionality of sensor biasing circuits and infrared-analogous emitters under real-world conditions.}
+    \resumeItem{Documented comprehensive design specifications and verification plans for custom-PCB optical boards, analyzing how digital logic interacts with real-world analog signals and optics.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Formula Slug, University of California Santa Cruz}{Oct. 2025 -- Present}{Hardware Engineering Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Integrated digital telemetry logic with high-power analog circuits, running bench-level simulations to ensure robustness against strict power and noise-sensitivity constraints.}
+    \resumeItem{Designed high-speed data formatting interfaces (SPI/I2C/CAN FD) for custom PCBs, actively contributing to cross-functional design reviews for critical hardware subsystems.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Slugbotics, University of California Santa Cruz}{Jan. 2025 -- Jun. 2025}{Digital Logic \& Integration Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Integrated digital logic controllers with complex analog motor drivers and sensors to ensure robust, real-time actuation of an underwater ROV.}
+    \resumeItem{Debugged hardware interfaces and analyzed mixed-signal performance issues on physical prototypes during rigorous pool testing.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading{FPGA RTL Video Game Development $\vert$ \emph{Verilog, RTL Design, FPGA, VGA}}{Feb. 2026 -- Mar. 2026}
+  \resumeItemListStart
+    \resumeItem{Designed and implemented synthesizable RTL modules in Verilog from scratch, creating custom timing generators and pixel readout controllers to continuously stream VGA color data.}
+    \resumeItem{Developed rigorous testbenches and analyzed simulation waveforms to verify RTL functionality, debugging digital logic issues prior to physical hardware synthesis.}
+    \resumeItem{Successfully deployed the digital logic design onto an FPGA platform, managing strict timing constraints to output high-speed data formatting directly to a VGA monitor.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \item\small{\textbf{HDLs \& RTL Design:} Verilog, SystemVerilog Concepts, RTL Modules, Testbenches, Simulation Waveforms, FPGA Development, ASIC Design Flows}
+  \item\small{\textbf{Hardware \& Sensors:} Digital Logic Design, Analog/Mixed-Signal Integration, Pixel Readout Controllers, Timing Generators, ADCs, ROICs, Infrared/Optics Concepts}
+  \item\small{\textbf{Tools \& Methodologies:} EDA Tools, Oscilloscopes, High-Speed Data Formatting, Design Specifications, Verification Plans, Noise-Sensitivity Constraints}
+\resumeSubHeadingListEnd
+
+\end{document}

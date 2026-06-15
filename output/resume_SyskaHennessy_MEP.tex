@@ -1,0 +1,98 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{8pt}
+
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.75in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\vspace{1pt}\hrule]
+\titlespacing*{\section}{0pt}{1pt}{2pt}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \small #2 \\
+      \small #3 & \small #4 \\
+    \end{tabular*}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small #1 & \small #2 \\
+    \end{tabular*}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label=\textbullet]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=-]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Mihir Bhagatwala} \\
+  {\small (858) 280-9325 $\vert$ \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $\vert$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio}} \\
+  {\small \textbf{California (Available for Summer 2026)}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{University of California, Santa Cruz}{Santa Cruz, CA}{B.S. in Computer Engineering (Electrical Engineering Emphasis)}{Expected Jun. 2027}
+  \resumeItemListStart
+    \resumeItem{\textbf{GPA:} 3.52}
+    \resumeItem{\textbf{Coursework:} Circuit Theory, Electromagnetism, Digital Signal Processing, Embedded Systems, Computer Architecture, Systems Engineering}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Formula Slug, University of California Santa Cruz}{Oct. 2025 -- Present}{Electrical Engineering Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Assisted engineers in preparing comprehensive design documentation and schematic drawings for complex low-voltage power distribution systems.}
+    \resumeItem{Utilized CAD software tools to prepare robust layouts of electrical systems, executing careful spatial planning and isolation parameters.}
+    \resumeItem{Performed rigorous design calculations and component sizing for TSMP-based power regulation to ensure J1772 charging signaling met strict capacity constraints.}
+    \resumeItem{Assisted engineers with field investigations and bench-level site visits to observe hardware integrations and resolve power integrity issues collaboratively.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Santa Cruz Institute for Particle Physics}{Jan. 2025 -- Present}{Engineering Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Leveraged design and calculation software (LTspice) to simulate, calculate, and validate safety interlocks within analog power-delivery circuits.}
+    \resumeItem{Prepared technical reports using the MS Office Suite (Word, Excel) to clearly document the performance and load characteristics of optical instrumentation.}
+    \resumeItem{Shared in the responsibility of producing truly innovative solutions, collaborating closely with senior researchers in a fast-paced environment.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Slugbotics, University of California Santa Cruz}{Jan. 2025 -- Jun. 2025}{Mechatronics Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Prepared structured solid models and drawings for electromechanical assemblies, coordinating tightly with cross-functional engineering teams.}
+    \resumeItem{Executed spatial planning for complex electrical routings within mechanical constraints, drawing parallels to foundational MEP (Mechanical, Electrical, and Plumbing) integration concepts.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \item\small{\textbf{Software \& CAD:} AutoCAD, Revit (MEP Concepts), MS Office Suite, LTspice, KiCad, Altium, SolidWorks}
+  \item\small{\textbf{Electrical Engineering:} Design Calculations, Sizing Electrical Systems, Field Investigations, Power Distribution, Schematic Drawings}
+  \item\small{\textbf{Project Execution:} Design Documentation, Site Visits, Technical Reporting}
+\resumeSubHeadingListEnd
+
+\end{document}

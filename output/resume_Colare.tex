@@ -1,0 +1,184 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{mathptmx} % Times New Roman font
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$-$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge Mihir Bhagatwala} \\ \vspace{5pt}
+    \small \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $|$ (858) 280-9325 $|$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio} $|$ \href{https://github.com/mihirb-hub}{github.com/mihirb-hub} \\ \vspace{2pt}
+    \textbf{Location: Santa Cruz / San Francisco Bay Area} $|$ \textbf{U.S. Citizen}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Cruz}{Santa Cruz, CA}
+      {B.S. in Computer Engineering}{Jun. 2027 (Expected)}
+      \resumeItemListStart
+        \resumeItem{Cumulative GPA: 3.52}
+        \resumeItem{\textbf{Coursework:} Circuit Theory, Logic Design, Hardware Validation, Embedded Engineering, Power Systems}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Charging Board Engineer}{Oct. 2025 -- Present}
+      {Formula Slug}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Designed a custom low-voltage \textbf{STM32}-based PCBA in \textbf{KiCad} for SAE J1772 signaling, utilizing simulation tools and rapid electrical prototyping to optimize complex power systems.}
+        \resumeItem{Applied strong analytical skills to problem-solve and debug signal integrity issues over CAN, SPI, and I2C, successfully validating embedded firmware functionality.}
+        \resumeItem{Built and analyzed electrical reliability test benches for high-voltage power regulation circuits, documenting procedures to ensure clear communication and safe execution across the team.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant -- Electronics Lab}{Jan. 2025 -- Present}
+      {Santa Cruz Institute for Particle Physics}{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{Contributed to critical projects by writing Python scripts to autonomously acquire, process, and analyze sensor data, demonstrating a high proficiency in data interpretation.}
+        \resumeItem{Collaborated with senior engineers to operate electrical test setups, designing simulation methodologies to validate analog noise suppression and over-voltage protection components.}
+        \resumeItem{Integrated embedded C firmware for Arduino and Raspberry Pi DAQ systems, solving real-world engineering challenges to analyze high-bandwidth isotope emission spectra.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Robotics Hardware Engineer}{Jan. 2025 -- Jun. 2025}
+      {Slugbotics}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Worked in a multidisciplinary team environment to execute system-level integration testing for an underwater MATE ROV, optimizing firmware and hardware revisions.}
+        \resumeItem{Applied electricity fundamentals to physical reliability campaigns, analyzing the performance of waterproof electrical components under high thermal and pressure stress.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS \& AWARDS-----------
+\section{PROJECTS \& AWARDS}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ESP32 Embedded Systems Projects}{Apr. 2026 -- Jun. 2026}
+      {Firmware \& Hardware Prototyping}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Applied electricity fundamentals to practical applications by prototyping embedded C firmware on \textbf{ESP32 microcontrollers}, building custom sensor arrays (temperature, ultrasonic) and interactive hardware displays.}
+        \resumeItem{Debugged electrical designs and implemented reliable I2C/UART data streams, utilizing analytical troubleshooting to solve complex timing and signal noise challenges.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {CruzHacks 2025 Justice Track Winner}{Apr. 2025}
+      {Project: VoteSmart}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{AI agents} leveraging \textbf{Gemini LLM APIs} to intelligently process and route complex data during a 36-hour hackathon, mirroring advanced AI-driven evaluation and simulation workflows.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Electrical Design:} Circuit Design, Power Systems, PCBA Design (KiCad), Simulation Tools (SPICE), Prototyping \\
+     \textbf{Data \& Analysis:} Problem-Solving, Data Interpretation, Python Automation, DAQ Systems, AI Agent Workflows \\
+     \textbf{Bench Equipment:} Oscilloscopes, DMMs, Programmable Power Supplies, Electronic Loads, Sensor Integration \\
+     \textbf{Embedded Systems:} Embedded C, C/C++, Arduino, Raspberry Pi, Protocol Debugging (CAN, SPI, UART, I2C)
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

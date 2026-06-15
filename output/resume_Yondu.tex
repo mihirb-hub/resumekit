@@ -1,0 +1,177 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{mathptmx} % Times New Roman font
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$-$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge Mihir Bhagatwala} \\ \vspace{5pt}
+    \small \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $|$ (858) 280-9325 $|$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio} $|$ \href{https://github.com/mbhagatwala}{github.com/mbhagatwala} \\ \vspace{2pt}
+    \textbf{Location: San Diego, CA}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Cruz}{Santa Cruz, CA}
+      {B.S. in Computer Engineering}{Jun. 2027 (Expected)}
+      \resumeItemListStart
+        \resumeItem{Cumulative GPA: 3.52}
+        \resumeItem{\textbf{Coursework:} Mechatronics, Embedded Systems, Circuit Theory, Robotics Systems Integration}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Electromechanical Systems Engineer}{Jan. 2025 -- Jun. 2025}
+      {Slugbotics}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Managed the end-to-end rapid prototyping and integration of \textbf{BLDC actuators} and complex electromechanical systems for an autonomous robotics platform.}
+        \resumeItem{Demonstrated excellent mechanical intuition by designing robust CAD assemblies (\textbf{Fusion360} \& SolidWorks), analyzing how structural components move and fail under stress to improve real-world deployments.}
+        \resumeItem{Utilized hand tools for the rigorous assembly, disassembly, and troubleshooting of robotics hardware, collaborating with software teams to refine simulation models (\textbf{.urdf format}).}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Embedded Systems \& Hardware Engineer}{Oct. 2025 -- Present}
+      {Formula Slug}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Designed and integrated low-voltage embedded systems and custom printed circuit boards utilizing \textbf{KiCAD}, taking direct ownership of critical vehicle hardware.}
+        \resumeItem{Engineered robust hardware communication architectures utilizing \textbf{CANbus} to safely manage telemetry and interlocks for a high-performance, \textbf{lithium-based battery} tractive system.}
+        \resumeItem{Rapidly prototyped electrical subsystems and iterated on designs based on changing demands, ensuring reliable performance across highly complex mechanical vehicle architectures.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Hardware Verification \& Troubleshooting Intern}{Jan. 2025 -- Present}
+      {Santa Cruz Institute for Particle Physics}{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{Troubleshot and debugged custom electro-optical sensor systems, displaying strong hands-on engineering ability and deep technical intuition.}
+        \resumeItem{Maintained comprehensive documentation of systems, test results, and hardware failures to meet the specific requirements of dedicated simulation and software teams.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------AWARDS-----------
+\section{AWARDS}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CruzHacks 2025 Justice Track Winner}{Apr. 2025}
+      {Project: VoteSmart}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Showcased the ability to rapidly prototype and iterate on software systems by independently architecting backend APIs during a 48-hour competitive hackathon.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Robotics \& Hardware:} Electromechanical Systems Integration, Mechanical Intuition, Assembly \& Disassembly, Hand Tools \\
+     \textbf{Specific Technologies:} BLDC Actuators, CANbus, Lithium-based Batteries, Embedded Systems, .urdf Format \\
+     \textbf{Engineering Tools:} CAD Software (Fusion360, SolidWorks), PCB Design (KiCAD), Hardware Troubleshooting \\
+     \textbf{Software \& Simulation:} Python, C/C++, Interdisciplinary Collaboration, System Documentation \& Validation
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

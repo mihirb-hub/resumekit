@@ -1,0 +1,177 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{mathptmx} % Times New Roman font
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$-$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge Mihir Bhagatwala} \\ \vspace{5pt}
+    \small \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $|$ (858) 280-9325 $|$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio} $|$ \href{https://github.com/mihirb-hub}{github.com/mihirb-hub} \\ \vspace{2pt}
+    \textbf{Location: Milpitas, CA} $|$ \textbf{U.S. Authorized (No Visa Sponsorship Required)}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Cruz}{Santa Cruz, CA}
+      {B.S. in Computer Engineering}{Jun. 2027 (Expected)}
+      \resumeItemListStart
+        \resumeItem{Cumulative GPA: 3.52}
+        \resumeItem{\textbf{Coursework:} Circuit Theory, Logic Design, Signals \& Systems, Embedded Engineering, Electromagnetism}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Charging Board Engineer}{Oct. 2025 -- Present}
+      {Formula Slug}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Designed a compact low-voltage PCB in KiCad for SAE J1772 signaling, managing hardware revisions from initial schematic capture to final \textbf{PCBA validation testing}.}
+        \resumeItem{Developed custom hardware \textbf{test benches} to validate TSMP-based power regulation, voltage-sensing circuits, and safety interlocks under realistic load conditions.}
+        \resumeItem{Conducted rigorous \textbf{PCBA failure analysis} on iterative prototypes, debugging signal integrity to ensure robust CAN, SPI, and I2C communication with onboard control modules.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant -- Electronics Lab}{Jan. 2025 -- Present}
+      {Santa Cruz Institute for Particle Physics}{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{Designed and validated optical receiver and analog power-delivery PCBAs, actively debugging noise suppression and over-voltage protection circuits to ensure hardware reliability.}
+        \resumeItem{Programmed Raspberry Pi scripts and Arduino firmware to automate test cycles, streamlining \textbf{PCBA test data management} and timestamped data acquisition for analysis.}
+        \resumeItem{Executed \textbf{volume testing} and calibration of 38 kHz LED emitters and optical filters to accurately simulate and verify isotope emission spectra for a LANL prototype.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Vision Engineer}{Jan. 2025 -- Jun. 2025}
+      {Slugbotics}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Assembled a MATE ROV, integrating custom PCBAs and performing system-level validation to ensure stable real-time video streaming in waterproof environments.}
+        \resumeItem{Supported test bench development for an OpenCV image-segmentation pipeline, performing failure analysis on contour detection reliability to optimize semi-autonomous visual targeting.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------AWARDS-----------
+\section{AWARDS}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CruzHacks 2025 Justice Track Winner}{Apr. 2025}
+      {Project: VoteSmart}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Designed backend data structures and integrated data-protection techniques to securely manage data for an election web application built during a 36-hour hackathon.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{PCBA Testing \& Validation:} Test Bench Development, Failure Analysis, Volume Testing, Test Data Management \\
+     \textbf{Hardware Engineering:} PCB Design (KiCad), Circuit Theory, Soldering, Breadboard Prototyping, Oscilloscopes \\
+     \textbf{Software \& Data:} Python, C/C++, Data Acquisition, Automated Test Cycles, MATLAB, GitHub \\
+     \textbf{Embedded Systems:} Arduino, Raspberry Pi, SPI/I2C/CAN Protocols, Signal Integrity Validation
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

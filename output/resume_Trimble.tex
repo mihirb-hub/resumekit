@@ -1,0 +1,173 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{mathptmx} % Times New Roman font
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$-$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge Mihir Bhagatwala} \\ \vspace{5pt}
+    \small \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $|$ (858) 280-9325 $|$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio} $|$ \href{https://github.com/mihirb-hub}{github.com/mihirb-hub} \\ \vspace{2pt}
+    \textbf{Location: Santa Clara, CA}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Cruz}{Santa Cruz, CA}
+      {B.S. in Computer Engineering}{Jun. 2027 (Expected)}
+      \resumeItemListStart
+        \resumeItem{Cumulative GPA: 3.52}
+        \resumeItem{\textbf{Coursework:} Embedded Systems, Networking Protocols, C Programming, Real-Time Operating Systems}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Firmware Engineer}{Jan. 2025 -- Present}
+      {Santa Cruz Institute for Particle Physics}{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{Spearheaded the modularization of legacy firmware architectures by refactoring embedded \textbf{C programming} codebases to ensure high-quality, maintainable subsystems.}
+        \resumeItem{Architected build optimizations utilizing \textbf{conditional compilation} techniques and \textbf{header guards} to decouple core logic and seamlessly manage diverse hardware dependencies.}
+        \resumeItem{Owned the debugging process for build failures and performed extensive \textbf{cross-platform hardware validation} on complex electro-optical sensor targets.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Embedded Systems \& Firmware Engineer}{Oct. 2025 -- Present}
+      {Formula Slug}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Optimized critical \textbf{networking stacks} for custom vehicle controllers, building and validating embedded targets to ensure peak performance and world-class system stability.}
+        \resumeItem{Implemented robust communication architectures analogous to \textbf{TCP/IP, LWIP, and PPP}, directly influencing the reliability of high-speed hardware data streams.}
+        \resumeItem{Collaborated with senior engineers to document and refine the networking subsystem for next-generation hardware platforms, thriving in a purpose-driven, entrepreneurial culture.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Hardware \& RTOS Validation Engineer}{Jan. 2025 -- Jun. 2025}
+      {Slugbotics}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Validated real-time operating system (\textbf{RTOS}) performance across diverse hardware platforms, tackling real-world infrastructure challenges in autonomous robotics.}
+        \resumeItem{Drove system stability by testing modular firmware deployments, ensuring essential mechatronic hardware operated with maximum efficiency.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------AWARDS-----------
+\section{AWARDS}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CruzHacks 2025 Justice Track Winner}{Apr. 2025}
+      {Project: VoteSmart}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Demonstrated an entrepreneurial spirit by independently authoring modular code to tackle real-world challenges during a highly competitive 48-hour hackathon.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Firmware \& Embedded Systems:} C Programming, RTOS (eCos), Hardware Validation, Modular Architecture \\
+     \textbf{Networking Stack:} TCP/IP, LWIP, PPP, Routing Logic, Protocol Implementation \\
+     \textbf{Build \& Debugging:} Build Systems, Conditional Compilation, Header Guards, Dependency Management \\
+     \textbf{Tools \& Practices:} GitHub, Oscilloscopes, Cross-Platform Debugging, Legacy Code Refactoring, System Stability
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

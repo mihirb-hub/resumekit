@@ -1,0 +1,173 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{mathptmx} % Times New Roman font
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$-$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge Mihir Bhagatwala} \\ \vspace{5pt}
+    \small \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $|$ (858) 280-9325 $|$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio} $|$ \href{https://github.com/mihirb-hub}{github.com/mihirb-hub} \\ \vspace{2pt}
+    \textbf{Location: San Jose, CA} $|$ \textbf{U.S. Authorized (No Visa Sponsorship Required)}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Cruz}{Santa Cruz, CA}
+      {B.S. in Computer Engineering}{Jun. 2027 (Expected)}
+      \resumeItemListStart
+        \resumeItem{Cumulative GPA: 3.52}
+        \resumeItem{\textbf{Coursework:} Robotics Systems, Hardware Acceleration, FPGA Design, Embedded Systems}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {FPGA Logic Designer (Academic Project)}{Jan. 2024 -- Mar. 2024}
+      {University of California, Santa Cruz}{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{Architected and deployed a custom interactive video game on an \textbf{AMD/Xilinx FPGA} board using \textbf{Vivado}, dedicating 50+ hours to rigorous logic design and hardware debugging.}
+        \resumeItem{Engineered low-level hardware components utilizing FDREs (D Flip-Flops with Clock Enable) to manage game state, player movement, and collision detection logic for falling objects.}
+        \resumeItem{Developed custom embedded firmware to drive VGA communication protocols, successfully rendering real-time graphics and user interfaces directly from the Xilinx hardware.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Robotics Solutions Architect Intern}{Oct. 2025 -- Present}
+      {Formula Slug}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Defined end-to-end robotics system architectures for custom electric vehicles, spanning sensors, compute, control loops, and actuation mechanisms.}
+        \resumeItem{Collaborated with cross-functional software and silicon teams to design scalable, modular architectures for real-time systems, aligning architectural decisions with platform roadmaps.}
+        \resumeItem{Evaluated hardware-software partitioning strategies, analyzing latency, throughput, and determinism to optimally map algorithms onto embedded platforms.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Hardware Acceleration Engineer}{Jan. 2025 -- Present}
+      {Santa Cruz Institute for Particle Physics}{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{Identified sensor workloads suitable for hardware acceleration, including perception pipelines and sensor fusion algorithms for complex electro-optical arrays.}
+        \resumeItem{Translated complex research concepts into practical, deployable architectures, conducting rigorous performance benchmarking and comparative evaluations against CPU/GPU implementations.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Robotics Integration Engineer}{Jan. 2025 -- Jun. 2025}
+      {Slugbotics}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Integrated and validated robotics middleware (\textbf{ROS/ROS 2}) and advanced perception systems for an autonomous robotics platform.}
+        \resumeItem{Supported customer-facing demos and technical presentations, consistently translating complex technical concepts into clear architectural narratives for stakeholders.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{FPGA \& Hardware Acceleration:} AMD Vivado, Xilinx FPGAs, Verilog/VHDL, RTL, Hardware-Software Partitioning \\
+     \textbf{Robotics Systems:} ROS/ROS 2, Perception Pipelines, Sensor Fusion, Control Loops, Real-Time Systems \\
+     \textbf{Embedded \& Software:} C/C++, Python, ARM, RTOS, Low-Latency Design, SoC Platforms \\
+     \textbf{Cross-Functional Skills:} Solutions Architecture, Performance Benchmarking, Technical Presentations
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

@@ -1,0 +1,96 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{8pt}
+
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.75in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\vspace{1pt}\hrule]
+\titlespacing*{\section}{0pt}{1pt}{2pt}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      #3 & #4 \\
+    \end{tabular*}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label=\textbullet]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=-]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Mihir Bhagatwala} \\
+  {(858) 280-9325 $\vert$ \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $\vert$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio}} \\
+  {\textbf{Santa Clara, CA (Available On-Site 3-5 Days/Week)}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{University of California, Santa Cruz}{Santa Cruz, CA}{B.S. in Computer Engineering (Hardware/Software Validation Focus)}{Expected Jun. 2027}
+  \resumeItemListStart
+    \resumeItem{\textbf{GPA:} 3.52}
+    \resumeItem{\textbf{Coursework:} Digital Circuits, System Embedded Engineering, Logic Design (RTL Design \& Validation), Data Structures \& Algorithms, Computer Architecture}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Santa Cruz Institute for Particle Physics}{Jan. 2025 -- Present}{AFT \& Silicon Validation Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Developed and extended robust Python-based test automation frameworks to orchestrate end-to-end hardware sequences, executing board-level functional tests on high-fidelity receiver circuits.}
+    \resumeItem{Analyzed test results across device populations using pandas, NumPy, and matplotlib, identifying systematic failure signatures across thermal corners to support root-cause analysis (RCFA).}
+    \resumeItem{Automated power sequencing and data collection pipelines by scripting programmable power supplies and oscilloscopes, turning manual bench work into repeatable, production-grade test flows.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Formula Slug, University of California Santa Cruz}{Oct. 2025 -- Present}{Hardware Ops \& Board-Level Test Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Wrote and modified control scripts for sideband interfaces (I2C, SPI, UART, GPIO) to configure device registers, apply stimulus, and read back status during EVB-level bring-up.}
+    \resumeItem{Executed and debugged functional test sequences on custom PCB assemblies, validating socket contact integrity, power rail stability, and signal quality on high-speed interfaces.}
+    \resumeItem{Integrated automation with version control (Git) and CI workflows, ensuring test scripts for programmable power delivery and sideband control were traceable and peer-reviewed.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Slugbotics, University of California Santa Cruz}{Jan. 2025 -- Jun. 2025}{Python Automation \& Embedded Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Built custom hardware test harnesses and Python scripts that orchestrate multi-step hardware workflows, reliably parsing logs and moving data between systems for autonomous ROV operation.}
+    \resumeItem{Demonstrated strong lab aptitude by routinely hooking up probes, reading schematics, and resolving complex hardware-software interactions over serial and GPIO connections.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \item{\textbf{Test Automation \& Scripting:} Python, pandas, NumPy, matplotlib, Pytest, Custom Hardware Test Harnesses, CI Workflows, Git, SCPI/VISA, Data Logging Pipelines}
+  \item{\textbf{Hardware Debug \& Interfaces:} Sideband Interfaces (I2C, SPI, JTAG, UART, GPIO), EVB-Level Bring-Up, Oscilloscopes, Logic Analyzers, Programmable Power Supplies}
+  \item{\textbf{Validation Concepts:} ASIC Functional Test (AFT), Thermal Profiling, Power Sequencing, Root-Cause/Failure Analysis (RCFA), Signal Integrity Checks, Register Access, Boot Sequences, Firmware Load, PCIe, BIST/Scan}
+\resumeSubHeadingListEnd
+
+\end{document}

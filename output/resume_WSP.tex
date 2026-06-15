@@ -1,0 +1,184 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{mathptmx} % Times New Roman font
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$-$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge Mihir Bhagatwala} \\ \vspace{5pt}
+    \small \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $|$ (858) 280-9325 $|$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio} $|$ \href{https://github.com/mihirb-hub}{github.com/mihirb-hub} \\ \vspace{2pt}
+    \textbf{Location: San Diego, CA (Local Candidate)} $|$ \textbf{U.S. Authorized}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Cruz}{Santa Cruz, CA}
+      {B.S. in Computer Engineering (Testing \& Analysis Focus)}{Aug. 2027 (Expected)}
+      \resumeItemListStart
+        \resumeItem{Cumulative GPA: 3.52}
+        \resumeItem{\textbf{Coursework:} Laboratory Testing Principles, Hardware Validation, Technical Writing, Statistical Analysis}
+        \resumeItem{\textbf{Campus Involvement:} Engineering Project Lead at Formula Slug and Slugbotics.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Laboratory Testing Assistant}{Jan. 2025 -- Present}
+      {Santa Cruz Institute for Particle Physics}{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{Assisted with \textbf{project research and preliminary design calculations}, operating technology tools to analyze complex data from optical receiver systems.}
+        \resumeItem{Demonstrated proficiency in \textbf{technical writing and office automation}, collecting and maintaining project documentation to communicate findings to mentors and managers.}
+        \resumeItem{Completed rigorous training on assigned tasks, consistently upholding \textbf{workplace safety} policies and exercising ethical decision-making regarding lab resources.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Engineering Intern (Testing \& Validation)}{Oct. 2025 -- Present}
+      {Formula Slug}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Learned and applied basic principles of \textbf{laboratory testing} to design and validate high-voltage power regulation circuits, executing preliminary analysis to ensure reliable operations.}
+        \resumeItem{Assisted in collecting and \textbf{maintaining project documentation}, utilizing spreadsheets and software to track materials testing workflows and electrical specifications.}
+        \resumeItem{Applied competent \textbf{interpersonal and communication skills}, expressing complex testing ideas effectively and professionally to both engineering and non-engineering audiences.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Hardware Research Engineer}{Jan. 2025 -- Jun. 2025}
+      {Slugbotics}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Assisted with \textbf{field work} and system integration testing for an underwater robotic payload, collaborating with senior staff to execute complex assignments.}
+        \resumeItem{Took direction from leadership and mentors to execute projects, upholding a strong desire to advance skills related to multidisciplinary engineering.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS \& AWARDS-----------
+\section{PROJECTS \& AWARDS}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CruzHacks 2025 Justice Track Winner}{Apr. 2025}
+      {Project: VoteSmart}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Demonstrated strong \textbf{leadership involvement on campus} by leading a team to build an automated data analysis tool, utilizing software technology to parse complex datasets.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Embedded Sensor Analysis Projects}{Apr. 2026 -- Jun. 2026}
+      {Laboratory Research}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Performed laboratory testing and preliminary design analysis on embedded environmental sensors, interpreting data outputs to validate physical hardware performance.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Laboratory Testing:} Project Research, Field Work, Hardware Validation, Workplace Safety, Preliminary Analysis \\
+     \textbf{Documentation:} Technical Writing, Office Automation, Spreadsheets, Maintaining Project Documentation \\
+     \textbf{Communication:} Interpersonal Skills, Mentorship Collaboration, Cross-Functional Presentations \\
+     \textbf{Software \& Tools:} Python, MATLAB, Data Collection, Measurement Instruments (Oscilloscopes, DMMs)
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

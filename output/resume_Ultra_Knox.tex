@@ -1,0 +1,102 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{8pt}
+
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.75in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\vspace{1pt}\hrule]
+\titlespacing*{\section}{0pt}{1pt}{2pt}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \small #2 \\
+      \small #3 & \small #4 \\
+    \end{tabular*}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small #1 & \small #2 \\
+    \end{tabular*}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label=\textbullet]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=-]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Mihir Bhagatwala} \\
+  {\small (858) 280-9325 $\vert$ \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $\vert$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio}} \\
+  {\small \textbf{U.S. Citizen (Secret Clearance Eligible)} $\vert$ San Diego, CA (Available for On-Site)}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{University of California, Santa Cruz}{Santa Cruz, CA}{B.S. in Computer Engineering}{Expected Jun. 2027}
+  \resumeItemListStart
+    \resumeItem{\textbf{GPA:} 3.52}
+    \resumeItem{\textbf{Coursework:} Systems Engineering Fundamentals, EMI/EMC Testing, Signals \& Systems, Circuit Theory, Embedded Systems, Logic Design, Computer Architecture, Electromagnetism, Probability \& Statistics}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Formula Slug, University of California Santa Cruz}{Oct. 2025 -- Present}{Hardware Integration \& Test Engineer}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Assisted with bench-level integration and testing of complex low-voltage chassis configurations, utilizing oscilloscopes, multimeters, and power supplies for hardware bring-up and verification.}
+    \resumeItem{Supported physical hardware assembly, cable routing, and connector identification, utilizing Altium and Visio to interpret and document interconnect diagrams and wiring harnesses.}
+    \resumeItem{Maintained integration checklists, test logs, and discrepancy tracking using Jira, logging iterations of hardware communication protocols (CAN, SPI, I2C) to ensure test compliance.}
+    \resumeItem{Collaborated with the systems engineering team on requirements traceability, hardware revisions, and executing bench testing under engineer guidance in a fast-paced environment.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Slugbotics, University of California Santa Cruz}{Jan. 2025 -- Jun. 2025}{Mechanical Integration \& Systems Engineer}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Assembled MATE ROV mechanical fixtures and test setups, supporting physical hardware integration and testing in a dynamic, multidisciplinary environment.}
+    \resumeItem{Assisted with 3D printing of brackets and camera mounts using SolidWorks CAD models and Bambu Studio / Cura slicer tools to generate mechanical test aids.}
+    \resumeItem{Maintained detailed documentation of hardware configurations and build states, drafting engineering reports on the vision system’s integration with controls for semi-autonomous targeting.}
+    \resumeItem{Participated in team design discussions, lab integration events, and design review processes (SRR, PDR, CDR) to ensure reliable operation of the integrated test platform.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Santa Cruz Institute for Particle Physics}{Jan. 2025 -- Present}{Engineering Intern -- Electronics \& Test Lab}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Supported setup, operation, and logging of lab test equipment including signal generators and optical receivers to precisely simulate and verify prototype emission spectra.}
+    \resumeItem{Developed Python and MATLAB scripts on Raspberry Pi modules to automate test cycles, synchronize timestamped data acquisition, and support requirements traceability.}
+    \resumeItem{Built analog power-delivery circuits with over-voltage protection, gaining hands-on exposure to EMI/EMC testing practices and noise suppression in a lab environment.}
+    \resumeItem{Drafted and edited test procedures and integration plans for optical instrumentation, shadowing the full integration lifecycle from component bring-up through system-level test.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \item\small{\textbf{Hardware \& Lab Equipment:} Oscilloscopes, Multimeters, Bench Power Supplies, Signal Generators, Hardware Bring-up, EMI/EMC compliance, Connector Identification, Cable Routing, Harnesses}
+  \item\small{\textbf{CAD \& Fabrication:} SolidWorks, Fusion 360, 3D Printing, Bambu Studio, Cura Slicer, Mechanical Fixtures}
+  \item\small{\textbf{Software \& Scripting:} Python, MATLAB, C, C++, Jira (Issue Tracking), ConOps Documentation}
+  \item\small{\textbf{EDA \& Wiring:} Altium, KiCad, LTSpice, Verilog HDL, Visio}
+\resumeSubHeadingListEnd
+
+\end{document}

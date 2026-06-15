@@ -1,0 +1,179 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{mathptmx} % Times New Roman font
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$-$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge Mihir Bhagatwala} \\ \vspace{5pt}
+    \small \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $|$ (858) 280-9325 $|$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio} \\ \vspace{2pt}
+    \textbf{Location: Santa Cruz, CA}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Cruz}{Santa Cruz, CA}
+      {B.S. in Computer Engineering (Current 2nd-Year Student)}{Jun. 2027 (Expected)}
+      \resumeItemListStart
+        \resumeItem{Cumulative GPA: 3.52}
+        \resumeItem{\textbf{Coursework:} Circuits \& Energy Systems, Power Electronics, Probability \& Statistics, Mechatronics}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Power Electronics \& Energy Engineer}{Oct. 2025 -- Present}
+      {Formula Slug}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Gained hands-on experience in power electronics and energy storage applications by assisting engineers with the design of electrical networks for a renewable energy vehicle.}
+        \resumeItem{Reviewed electrical schematics, block diagrams, and technical drawings (\textbf{KiCad 9}) to verify hardware safety protocols for grid-tied equivalent power delivery systems.}
+        \resumeItem{Maintained detailed component lists ($\sim$\$80 BOMs), test logs, and overarching system documentation, demonstrating an organized, reliable, and detail-oriented work ethic.}
+        \resumeItem{Prepared summary materials for internal design reviews, utilizing \textbf{Microsoft Excel} to rigorously organize engineering files and track component procurement.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Engineering Support \& Data Analyst}{Jan. 2025 -- Present}
+      {Santa Cruz Institute for Particle Physics}{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{Assisted senior researchers with data collection and organization from complex hardware tests and physical simulations, applying a strong curiosity for how engineering works in practice.}
+        \resumeItem{Leveraged \textbf{MATLAB and Python} to perform calculations and parse high-dimensional test data, streamlining the team's data-driven decision-making process.}
+        \resumeItem{Created and updated detailed testing documents and presentations in \textbf{Microsoft Word and PowerPoint} to clearly communicate test results and project progress.}
+        \resumeItem{Organized engineering files and managed version-controlled test logs, applying a detail-oriented approach to support large-scale scientific technical projects.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Mechanical-Electrical Integration Engineer}{Jan. 2025 -- Jun. 2025}
+      {Slugbotics}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Supported project schedules, task lists, and internal reports for the integration of complex mechanical-electrical systems (autonomous mechatronic robotics).}
+        \resumeItem{Maintained version-controlled documentation to help organize, track, and communicate project milestones across cross-functional multidisciplinary teams.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------AWARDS-----------
+\section{AWARDS}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CruzHacks 2025 Justice Track Winner}{Apr. 2025}
+      {Project: VoteSmart}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Showcased a strong curiosity and desire to learn by independently architecting backend data pipelines using \textbf{Python} during a fast-paced 48-hour competitive hackathon.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Power \& Energy Systems:} Energy Storage Applications, Power Electronics, Electric Machines, Renewable Energy \\
+     \textbf{Engineering Support:} Data Collection \& Organization, Schematic Review, Component Lists (BOMs), System Documentation \\
+     \textbf{Software \& Tools:} Microsoft Office (Excel, Word, PowerPoint), MATLAB, Python, Git Version Control \\
+     \textbf{Administrative:} Project Tracking, Version-Controlled Documents, Design Reviews, Detail-Oriented Task Management
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

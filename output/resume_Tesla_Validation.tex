@@ -1,0 +1,101 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{8pt}
+
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.75in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\vspace{1pt}\hrule]
+\titlespacing*{\section}{0pt}{1pt}{2pt}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \small #2 \\
+      \small #3 & \small #4 \\
+    \end{tabular*}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small #1 & \small #2 \\
+    \end{tabular*}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label=\textbullet]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=-]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Mihir Bhagatwala} \\
+  {\small (858) 280-9325 $\vert$ \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $\vert$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio}} \\
+  {\small \textbf{Palo Alto, CA (Available for Fall 2026)}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{University of California, Santa Cruz}{Santa Cruz, CA}{B.S. in Computer Engineering}{Expected Jun. 2027}
+  \resumeItemListStart
+    \resumeItem{\textbf{GPA:} 3.52}
+    \resumeItem{\textbf{Coursework:} Circuit Theory, Embedded Systems, Mechatronics, Logic Design, Digital Signal Processing, Computer Architecture, Electromagnetism, Probability \& Statistics}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Formula Slug, University of California Santa Cruz}{Oct. 2025 -- Present}{Low Voltage Electrical Engineer}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Maintained start-to-finish ownership of custom low-voltage circuit boards for test systems, driving the specification, schematic design, layout, routing, and fabrication processes.}
+    \resumeItem{Performed hands-on bring-up, build, and debugging of new PCBs featuring power semiconductors, gate drive, and protection circuitry for real-time battery regulation.}
+    \resumeItem{Implemented reliable communication interfaces (CAN, SPI, I2C, UART) to emulate physical signals and transmit diagnostic data between electromechanical devices and the onboard display.}
+    \resumeItem{Collaborated with mechanical and firmware engineers to deliver robust, fully automated test systems and continuously validate power integrity via bench testing and iterative design cycles.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Santa Cruz Institute for Particle Physics}{Jan. 2025 -- Present}{Validation Infrastructure Engineer}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Developed automated test hardware and optical instrumentation subsystems to validate requirements for prototype emission spectra, utilizing oscilloscopes and network analyzers.}
+    \resumeItem{Interfaced custom test fixtures with PC-based test systems using Python and MATLAB to automate the execution of tests and maintain continuous robust operation.}
+    \resumeItem{Reviewed product schematics and designed analog power-delivery circuits with over-voltage protection to simulate and emulate physical hardware behaviors.}
+    \resumeItem{Simulated analog circuits in LTspice to ensure proper noise suppression before executing embedded programming of microprocessors (Arduino, Raspberry Pi) for synchronized data acquisition.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Slugbotics, University of California Santa Cruz}{Jan. 2025 -- Jun. 2025}{Mechatronics Engineer}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Designed and integrated software-controlled electromechanical systems, utilizing SolidWorks to fabricate test setups and enclosures for a MATE ROV.}
+    \resumeItem{Programmed real-time control applications and vision systems (OpenCV) to interface with physical hardware, supporting semi-autonomous targeting frameworks.}
+    \resumeItem{Maintained automated test setups and debugged mechanical constraints under cross-functional collaboration to push the physical robotic products to the limit.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \item\small{\textbf{Hardware \& Test:} Oscilloscopes, Network Analyzers, Hardware Bring-up, Microprocessors, Electromechanical Devices, Power Semiconductors, Gate Drive \& Protection Circuitry}
+  \item\small{\textbf{EDA \& Simulation:} Altium, KiCad, LTspice, Cadence, Verilog HDL, FPGAs, DSPs}
+  \item\small{\textbf{Software \& Scripting:} Python, MATLAB, LabVIEW, C, C++, Real-Time Control}
+  \item\small{\textbf{CAD \& Protocols:} SolidWorks, Catia, SPI, UART, I2C, CAN}
+\resumeSubHeadingListEnd
+
+\end{document}

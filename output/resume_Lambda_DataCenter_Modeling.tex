@@ -1,0 +1,96 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{8pt}
+
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.75in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\vspace{1pt}\hrule]
+\titlespacing*{\section}{0pt}{1pt}{2pt}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      #3 & #4 \\
+    \end{tabular*}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label=\textbullet]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=-]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Mihir Bhagatwala} \\
+  {(858) 280-9325 $\vert$ \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $\vert$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio}} \\
+  {\textbf{San Jose, CA (Available 4 Days/Week On-Site)}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{University of California, Santa Cruz}{Santa Cruz, CA}{B.S. in Computer Engineering (Electrical Power Engineering Focus)}{Expected Jun. 2027}
+  \resumeItemListStart
+    \resumeItem{\textbf{GPA:} 3.52}
+    \resumeItem{\textbf{Coursework:} Circuit Theory, Electromagnetism, Digital Signal Processing, Embedded Systems, Thermodynamics}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Formula Slug, University of California Santa Cruz}{Oct. 2025 -- Present}{Electrical Power Engineering Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Supported the design and layout of emerging electrical architectures, successfully delivering a custom J1772 signaling board (KiCad) interacting with high-voltage tractive battery systems (up to 800VDC) while referencing IEEE standards.}
+    \resumeItem{Executed BMS and controls integration via CAN FD/SPI telemetry, utilizing oscilloscopes, DC supplies, and logic analyzers to translate electrical power theory into working physical systems.}
+    \resumeItem{Prepared comprehensive technical reports and one-line diagrams, actively participating in the final delivery, reviews, and on-site commissioning of high-power subsystems for competition.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Santa Cruz Institute for Particle Physics}{Jan. 2025 -- Present}{Power Systems \& Validation Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Assisted in rigorous data collection and field verification for high-fidelity optical instrumentation, developing robust Python and C automation scripts to analyze electrical system performance.}
+    \resumeItem{Performed load flow, short circuit, and arc flash analysis on analog power-delivery circuits using LTspice and SKM, collaborating seamlessly with team members to resolve power system issues identified through modeling.}
+    \resumeItem{Demonstrated strong problem-solving instincts by prototyping and commissioning custom test hardware, verifying over-voltage protection and relay coordination concepts directly on the bench.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Slugbotics, University of California Santa Cruz}{Jan. 2025 -- Jun. 2025}{Controls \& Automation Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Developed and integrated advanced control systems for underwater ROVs, gaining hands-on experience with IoT-based electrical telemetry, analog motor drivers, and industrial-style automation (PLC / Ladder Logic concepts).}
+    \resumeItem{Processed real-time operational data using MATLAB and Python, translating theoretical dynamic models into robust, working mechanical and electrical architectures using modern prototyping tools.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \item{\textbf{Power Engineering \& Modeling:} Electrical Power Engineering Theory, Load Flow, Short Circuit \& Arc Flash Analysis, One-Line Diagrams, BMS/Controls Integration, 800VDC Architectures, Relay Coordination Concepts, IEEE Standards}
+  \item{\textbf{Lab Equipment \& Prototyping:} Oscilloscopes, DC Supplies, Logic Analyzers, LCR Meters, System Commissioning, Modern Prototyping Tools, Field Verification, PLC (Ladder Logic)}
+  \item{\textbf{Software \& Tools:} Python, C, KiCad, LTspice, MATLAB, ETAP, SKM, EasyPower, LabView, Fusion 360, Data Collection, Technical Reporting}
+\resumeSubHeadingListEnd
+
+\end{document}

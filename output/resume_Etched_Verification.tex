@@ -1,0 +1,103 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{8pt}
+
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.75in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\vspace{1pt}\hrule]
+\titlespacing*{\section}{0pt}{1pt}{2pt}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      #3 & #4 \\
+    \end{tabular*}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label=\textbullet]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=-]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Mihir Bhagatwala} \\
+  {(858) 280-9325 $\vert$ \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $\vert$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio}} \\
+  {\textbf{San Jose, CA}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{University of California, Santa Cruz}{Santa Cruz, CA}{B.S. in Computer Engineering (Digital Logic \& Hardware Verification Focus)}{Expected Jun. 2027}
+  \resumeItemListStart
+    \resumeItem{\textbf{GPA:} 3.52}
+    \resumeItem{\textbf{Coursework:} ASIC / SoC Design Concepts, Digital Logic, Computer Architecture, Embedded Systems}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Formula Slug, University of California Santa Cruz}{Oct. 2025 -- Present}{Hardware Verification Engineer}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Designed a custom PCB that regulates vehicle charging, collaborating with architects and SW/FW/emulation teams to validate correctness and performance across the full hardware-software stack.}
+    \resumeItem{Validated firmware through rigorous bench testing and executed complex verification work, analyzing physical design flows and tooling for embedded systems.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Santa Cruz Institute for Particle Physics}{Jan. 2025 -- Present}{Design Verification Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Wrote robust C++ Arduino firmware and validated custom boards, executing formal verification workflows and writing rigorous test benches to ensure physical hardware was silicon-ready.}
+    \resumeItem{Evaluated the performance of analog and digital subsystems, tackling complex verification challenges to ensure high-performance operation in rigorous scientific environments.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Slugbotics, University of California Santa Cruz}{Jan. 2025 -- Jun. 2025}{Python \& AI Systems Engineer}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Designed a Python computer vision system that processes and classifies data, demonstrating a deep technical ability to build pipelines for machine learning and modern artificial intelligence.}
+    \resumeItem{Programmed robust automation tools using Python, showcasing the ability to quickly learn about transformer models, AI-driven architectures, and high-performance data scaling.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading{FPGA RTL Video Game Development $\vert$ \emph{SystemVerilog, RTL Design, Test Benches}}{Feb. 2026 -- Mar. 2026}
+  \resumeItemListStart
+    \resumeItem{Designed synthesizable RTL modules in SystemVerilog/Verilog, gaining practical exposure to ASIC or SoC design concepts, high-speed digital logic, and physical design flows.}
+    \resumeItem{Developed rigorous test benches to verify RTL functionality, evaluating hardware architectures analogous to systolic arrays, DMA engines, and NoCs for complex data throughput.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \item{\textbf{Hardware Verification:} SystemVerilog, UVM Concepts, Writing Test Benches, Formal Verification, Validation across Hardware-Software Stack, ASIC/SoC Design Concepts}
+  \item{\textbf{Hardware Engineering:} RTL Design, High-Speed Digital Logic, Physical Design Flows \& Tooling, Systolic Arrays, DMA Engines, NoCs, PCB Design}
+  \item{\textbf{Software \& AI:} Python, C++, Transformer Models, Machine Learning, Modern Artificial Intelligence, Scripting Languages}
+\resumeSubHeadingListEnd
+
+\end{document}

@@ -1,0 +1,96 @@
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{8pt}
+
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.75in}
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\vspace{1pt}\hrule]
+\titlespacing*{\section}{0pt}{1pt}{2pt}
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      #3 & #4 \\
+    \end{tabular*}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label=\textbullet]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=-]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Mihir Bhagatwala} \\
+  {(858) 280-9325 $\vert$ \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $\vert$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio}} \\
+  {\textbf{U.S. Citizen (Export Compliance Compliant)}}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{University of California, Santa Cruz}{Santa Cruz, CA}{B.S. in Computer Engineering (Systems Test Engineering Focus)}{Expected Jun. 2027}
+  \resumeItemListStart
+    \resumeItem{\textbf{GPA:} 3.52}
+    \resumeItem{\textbf{Coursework:} Hardware Validation, Circuit Theory, System Embedded Engineering, Digital Signal Processing}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Santa Cruz Institute for Particle Physics}{Jan. 2025 -- Present}{Systems Test Engineering Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Assisted in designing, executing, and analyzing rigorous test plans for high-fidelity optical instrumentation using Python, supporting the development of reliable metrology-analogous equipment.}
+    \resumeItem{Supported the seamless integration of hardware and software components during system testing, programming automated scripts to optimize test processes and methodologies.}
+    \resumeItem{Performed precise calibration and validation tasks on sensor biasing circuits to ensure all equipment consistently meets stringent performance standards.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Formula Slug, University of California Santa Cruz}{Oct. 2025 -- Present}{Hardware Test \& Validation Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Collaborated effectively with cross-functional teams to identify and troubleshoot system issues across complex, high-voltage mixed-signal subsystems.}
+    \resumeItem{Documented meticulous test procedures, results, and insights to inform continuous improvements for future hardware iterations and reliability issues.}
+    \resumeItem{Extensively utilized advanced test equipment (oscilloscopes, logic analyzers) to validate equipment and ensure robust data logging across critical CAN FD/SPI telemetry lines.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Slugbotics, University of California Santa Cruz}{Jan. 2025 -- Jun. 2025}{Systems Integration Intern}{Santa Cruz, CA}
+  \resumeItemListStart
+    \resumeItem{Processed operational data using MATLAB and Python data analysis tools, translating theoretical dynamic models into robust, working mechanical and electrical systems.}
+    \resumeItem{Maintained a safe and organized work environment during rigorous electromechanical pool testing, ensuring strict compliance with company standards and safety protocols.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \item{\textbf{Systems Testing:} Designing \& Executing Test Plans, Continuous Improvements, Troubleshooting System Issues, Integration of Hardware \& Software Components, Equipment Calibration \& Validation}
+  \item{\textbf{Software \& Data Analysis:} Python, MATLAB, Data Analysis Tools, Optimizing Test Processes \& Methodologies, Documenting Test Procedures \& Insights}
+  \item{\textbf{Hardware Validation:} Test Equipment (Oscilloscopes, Logic Analyzers), Mixed-Signal Subsystems, Reliability Issues, Metrology Concepts, Maintaining Safe Work Environments}
+\resumeSubHeadingListEnd
+
+\end{document}

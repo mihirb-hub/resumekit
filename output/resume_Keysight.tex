@@ -1,0 +1,178 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{mathptmx} % Times New Roman font
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$-$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge Mihir Bhagatwala} \\ \vspace{5pt}
+    \small \href{mailto:bhagatwala.mihir@gmail.com}{bhagatwala.mihir@gmail.com} $|$ (858) 280-9325 $|$ \href{https://mihirb-hub.github.io/Portfolio/}{mihirb-hub.github.io/Portfolio} $|$ \href{https://github.com/mihirb-hub}{github.com/mihirb-hub} \\ \vspace{2pt}
+    \textbf{Location: Santa Rosa, CA (Available for Relocation)} $|$ \textbf{U.S. Authorized}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Cruz}{Santa Cruz, CA}
+      {B.S. in Computer Engineering}{Jun. 2027 (Expected)}
+      \resumeItemListStart
+        \resumeItem{Cumulative GPA: 3.52}
+        \resumeItem{\textbf{Coursework:} Circuit Theory, Manufacturing Processes, Electronic Test \& Validation, Hardware Integration}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Charging Board Engineer (Assembly \& Test)}{Oct. 2025 -- Present}
+      {Formula Slug}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Determined and followed precise techniques in the \textbf{fabrication, electronic assembly, and testing} of custom STM32-based PCBAs for high-voltage power regulation.}
+        \resumeItem{Responsible for performing \textbf{quality inspection} of in-process sub-assemblies, \textbf{interpreting manufacturing drawings and schematics} to approve or reject electrical components.}
+        \resumeItem{Supported \textbf{materials handling} operations by managing BOM databases, performing kitting of materials for production, and tracking inventory accuracy across the lab.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Electronics Test \& Repair Assistant}{Jan. 2025 -- Present}
+      {Santa Cruz Institute for Particle Physics}{Santa Cruz, CA}
+      \resumeItemListStart
+        \resumeItem{Performed \textbf{routine tests of complex circuits, components, and instruments}, executing data analysis to determine new approaches to meet stringent optical receiver requirements.}
+        \resumeItem{Interpreted and created \textbf{documentation of results (e.g., graphs, charts)} using Python to track test area objectives and maintain production tracking databases.}
+        \resumeItem{Executed detailed \textbf{test and rework} procedures on hardware setups, demonstrating a strong dedication to detail and solving complex problems with multiple electrical variables.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Electromechanical Assembly Engineer}{Jan. 2025 -- Jun. 2025}
+      {Slugbotics}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Executed electronic, mechanical, and electrical \textbf{sub-assembly operations} for waterproof mechatronic systems in a fast-paced, collaborative team environment.}
+        \resumeItem{Produced setups and adjustments to electromechanical productions processes, interpreting \textbf{mechanical prints and diagrams} to assemble robotic payloads.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS \& AWARDS-----------
+\section{PROJECTS \& AWARDS}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Embedded Systems Prototyping Projects}{Apr. 2026 -- Jun. 2026}
+      {Fabrication \& Rework}{University of California, Santa Cruz}
+      \resumeItemListStart
+        \resumeItem{Performed fabrication, assembly, and testing of embedded circuit prototypes on ESP32 microcontrollers, interpreting diagrams and part lists to build out physical interactive systems.}
+        \resumeItem{Conducted routine repair and troubleshooting of I2C and UART assemblies, exhibiting a positive attitude, curiosity, and a strong willingness to learn new diagnostic procedures.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Manufacturing Operations:} Electronic/Mechanical Assembly, Fabrication, Quality Inspection, Materials Handling, Kitting \\
+     \textbf{Test \& Repair:} Circuit Testing, Hardware Rework, Multimeters, Oscilloscopes, Bench Diagnostics \\
+     \textbf{Documentation:} Interpreting Manufacturing Drawings/Prints, Tracking Databases, Graphing Results (Python) \\
+     \textbf{Attributes:} Positive Attitude, Strong Ethics, Dedication, Attention to Detail, Collaboration, Initiative
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
