@@ -17,7 +17,7 @@ This kit is designed to work with agents like Claude Code or Codex, but the work
 Paste this into Claude Code or Codex:
 
 ```text
-Set up https://github.com/neelb1/resume-kit for me.
+Set up https://github.com/mihirb-hub/resume-kit for me.
 
 Read `install.md` first, then follow it exactly.
 
@@ -34,7 +34,7 @@ After that:
 Keep the process highly guided. At each stage, tell me exactly what to do next, which folder I should be in, and which command I should run after that.
 ```
 
-Repository URL: `https://github.com/neelb1/resume-kit`
+Repository URL: `https://github.com/mihirb-hub/resume-kit`
 
 ## High-Level Flow
 
