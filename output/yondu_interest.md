@@ -1,3 +1,0 @@
-# Why Yondu?
-
-What excites me most about Yondu is the opportunity to take end-to-end ownership of complex electromechanical systems and deploy cutting-edge humanoid robots in the real world. In my previous work building autonomous marine vehicles and high-performance electric racecars, I thrived in fast-paced environments where rapid prototyping and interdisciplinary collaboration were essential to success. I am deeply drawn to Yondu's commitment to iterating quickly based on real-world demands, and I am eager to apply my mechanical intuition and hands-on experience with BLDC actuators, CANbus architectures, and embedded systems to make a direct, tangible impact on the company's next generation of robotic deployments.

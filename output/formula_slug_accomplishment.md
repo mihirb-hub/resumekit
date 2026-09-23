@@ -1,5 +1,0 @@
-# Most Impressive Accomplishment: Formula Slug Charging Board
-
-**Prompt:** What is the most impressive thing you have ever accomplished?
-
-The most impressive thing I have accomplished is owning the end-to-end design and hardware validation of the SAE J1772 charging control board for the Formula Slug electric vehicle. Operating under strict spatial constraints and a tight ~$80 BOM, I engineered a custom PCB from scratch using KiCad that served as the critical bridge between external power delivery and our internal vehicle networks. This project fundamentally reshaped my understanding of vehicle controls; I learned firsthand how to interpret low-level analog inputs—like decoding 1kHz PWM control pilot signals—to dictate high-level state machines that safely govern high-voltage contactors. Furthermore, it taught me the absolute necessity of hardware redundancy and fail-safes in vehicle controls. By successfully integrating this board into the vehicle's CAN bus for real-time telemetry, I moved beyond theoretical circuit design into practical systems integration, delivering robust hardware that safely powered a high-performance electric racecar.
